@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Spyder project files
+.spyderproject
+.spyproject
+
+# VSCode settings
+.vscode/
+
+# Data or model files
+*.csv
+*.h5
+*.pkl
+*.joblib
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
