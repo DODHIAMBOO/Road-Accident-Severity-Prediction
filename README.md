@@ -1,5 +1,9 @@
 #  Kenya Road Accidents - Nairobi Chapter
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Jupyter](https://img.shields.io/badge/jupyter-enabled-orange)
+
 ## 🧠 Predicting Road Accident Severity in Kenya Using Machine Learning
 
 ### 📌 Problem Statement
