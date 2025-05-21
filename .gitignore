@@ -28,3 +28,9 @@ venv/
 # System files
 .DS_Store
 Thumbs.db
+# Ignore all CSV files
+*.csv
+
+# But NOT this specific dataset
+!data/
+!data/RTA_Dataset.csv
