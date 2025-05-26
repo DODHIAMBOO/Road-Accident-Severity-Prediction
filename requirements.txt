@@ -1,8 +1,9 @@
 scikit-learn
-sklearn version 1.5.0
 scipy
 joblib
 pandas
 numpy
 pillow
 pickle
+streamlit
+matplotlib
