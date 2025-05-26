@@ -9,9 +9,17 @@ import os
 import joblib
 
 
+import joblib
+import os
+
+
 def get_model(model_path):
     try:
-        full_path = os.path.join(os.path.dirname(__file__), model_path)
+        # Get absolute path relative to the current script
+        base_path = os.path.dirname(os.path.abspath(__file__))
+        # One level up from src
+        full_path = os.path.join(base_path, "..", model_path)
+        print(f"Loading model from: {full_path}")
         with open(full_path, "rb") as mh:
             rf = joblib.load(mh)
             return rf
