@@ -1,9 +1,6 @@
-scikit-learn
-scipy
-joblib
-pandas
-numpy
-pillow
-pickle
-streamlit
-matplotlib
+streamlit 
+pandas 
+numpy 
+scikit-learn 
+matplotlib 
+seaborn 
