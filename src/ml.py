@@ -116,4 +116,4 @@ with st.form("Prediction_form"):
 
         pred = get_prediction(data=data, model=model)
 
-        st.write(f"The predicted severity is : {pred}")
+        st.write("Model loaded:", model)
