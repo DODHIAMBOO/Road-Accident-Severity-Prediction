@@ -111,7 +111,7 @@ with st.form("Prediction_form"):
                          light_conditions, age_of_driver, education_of_driver, experience_of_driver,
                          type_of_vehicle, lanes, type_of_junction, road_surface, area_acc_Occured, type_of_collision]).reshape(1, -1)
 
-        model_path = "rt_reduced.joblib"       # No "src/" prefix
+        model_path = "rt_reduced.joblib"    
         model = get_model(model_path)
 
     
