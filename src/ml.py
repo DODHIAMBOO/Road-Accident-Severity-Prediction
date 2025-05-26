@@ -111,9 +111,15 @@ with st.form("Prediction_form"):
                          light_conditions, age_of_driver, education_of_driver, experience_of_driver,
                          type_of_vehicle, lanes, type_of_junction, road_surface, area_acc_Occured, type_of_collision]).reshape(1, -1)
 
-        model_path = "src/rt_reduced.joblib"
+        # Right before your prediction logic
+        model_path = "rt_reduced.joblib"       # No "src/" prefix
         model = get_model(model_path)
 
-        pred = get_prediction(data=data, model=model)
-
+        # Debug line—should now print your model object, not None
         st.write("Model loaded:", model)
+
+        if model is not None:
+            pred = get_prediction(data=data, model=model)
+            st.write(f"The predicted severity is : {pred}")
+        else:
+            st.error("Failed to load the model. Check logs for details.")
