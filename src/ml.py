@@ -116,7 +116,7 @@ with st.form("Prediction_form"):
         model = get_model(model_path)
 
         # Debug line—should now print your model object, not None
-        st.write("Model loaded:", model)
+        # st.write("Model loaded:", model)
 
         if model is not None:
             pred = get_prediction(data=data, model=model)
